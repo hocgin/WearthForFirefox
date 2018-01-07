@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Weather",
+  "description": "About Weather.",
+  "version": "0.0.8",
+  "icons": {
+    "16": "i/LOGO_16.png",
+    "48": "i/LOGO_48.png",
+    "128": "i/LOGO_128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "i/question.png"
+    },
+    "default_title": "天气",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "js/query-weather.2.js"
+    ]
+  },
+  "options_ui": {
+    "chrome_style": true,
+    "browser_style": true,
+    "page": "options.html"
+  },
+  "permissions": [
+    "<all_urls>",
+    "geolocation",
+    "storage",
+    "notifications"
+  ]
+}
